@@ -15,6 +15,8 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <h3>Hola {{ Auth::user()->name }} posees rol: {{ Auth::user()->getRoleNames()->first() }}</h3>
                 </div>
             </div>
         </div>
